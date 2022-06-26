@@ -53,6 +53,21 @@ namespace Day19_UserRegistration
 
 
         }
+        public Regex PhoneNumberRegex = new Regex(@"^(91){1}[ ]+[0-9]{10}$");//[0-9]{2}[ ]?[6-9][0-9]{9}
+        public void ValidatePhoneNumberRegex(string PhoneNumber)
+        {
+            Console.WriteLine("\nphonenumber:" + PhoneNumber);
+            if (PhoneNumberRegex.IsMatch(PhoneNumber))
+            {
+                Console.WriteLine("valide");
+            }
+            else
+            {
+                Console.WriteLine("not valid");
+            }
+
+
+        }
 
 
 

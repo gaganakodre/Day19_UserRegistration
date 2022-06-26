@@ -9,10 +9,11 @@
             regex.ValidateFirstNameRegex("Shreegowri");
             //uc2
             regex.ValidateLastNameRegex("Koder");
+            //uc4
+            regex.ValidatePhoneNumberRegex("91 8618199771");
             //uc3
 
-            //regex.ValidateLastNameRegex("hdshreegowri@gmail.com");
-            //{
+
             string[] EmailList = { "abc@yohoo.com","abc-100@yohoo.com",
                                     "abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net",
                                      "abc.100@abc.com.au", "abc@1.com","abc","abc@.com.my",
@@ -25,7 +26,7 @@
             {
                 regex.ValidateEmailAddressRegex(SampleEmailAddress);
             }
-            //}
+            
         }
     }
 }
