@@ -22,13 +22,23 @@ namespace Day19_UserRegistration
                 Console.WriteLine("not valid");
             }
             
-                    
-
-            
+        }
+        public Regex LastNameRegex = new Regex(@"^[A-Z]{1}[A-Za-z]{3,}?$");
+        public void ValidateLastNameRegex(string LastName)
+        {
+            Console.WriteLine("\nLastName:" + LastName);
+            if (LastNameRegex.IsMatch(LastName))
+            {
+                Console.WriteLine("valide");
+            }
+            else
+            {
+                Console.WriteLine("not valid");
+            }
 
 
         }
-        
+
 
 
     }
