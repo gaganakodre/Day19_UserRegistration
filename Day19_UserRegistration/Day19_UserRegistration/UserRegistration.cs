@@ -38,6 +38,21 @@ namespace Day19_UserRegistration
 
 
         }
+        public Regex EmailAddressRegex = new Regex(@"^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,})?$");
+        public void ValidateEmailAddressRegex(string EmailAddress)
+        {
+            Console.WriteLine("\nemail address:" + EmailAddress);
+            if (EmailAddressRegex.IsMatch(EmailAddress))
+            {
+                Console.WriteLine("valide");
+            }
+            else
+            {
+                Console.WriteLine("not valid");
+            }
+
+
+        }
 
 
 
