@@ -68,7 +68,21 @@ namespace Day19_UserRegistration
 
 
         }
+        public Regex PasswordRegex = new Regex(@"^[A-Za-z]{8,}$");
+        public void ValidatePasswordRegex(string Password)
+        {
+            Console.WriteLine("\nPassword:" + Password);
+            if (PasswordRegex.IsMatch(Password))
+            {
+                Console.WriteLine("valide");
+            }
+            else
+            {
+                Console.WriteLine("not valid");
+            }
 
+
+        }
 
 
     }

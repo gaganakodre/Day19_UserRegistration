@@ -11,6 +11,8 @@
             regex.ValidateLastNameRegex("Koder");
             //uc4
             regex.ValidatePhoneNumberRegex("91 8618199771");
+            //uc5
+            regex.ValidatePasswordRegex("abcdEfghihg");
             //uc3
 
 
